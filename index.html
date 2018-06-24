@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Do A Thing</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background: chartreuse;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <h1>Enjoy your thing!</h1>
+  <script>
+    const sites = [
+      'https://www.atlasobscura.com/random',
+      'https://en.wikipedia.org/wiki/Special:RandomInCategory/Featured_articles',
+      'https://longform.org/random'
+    ];
+
+    window.location.href = sites[Math.floor(Math.random() * sites.length)];
+  </script>
+</body>
+</head>
