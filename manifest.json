@@ -1,0 +1,15 @@
+{
+  "name": "Do a Thing",
+  "icons": [
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/do-a-thing/",
+  "display": "standalone",
+  "scope": "/do-a-thing/",
+  "background_color": "#3367D6",
+  "theme_color": "#3367D6"
+}
