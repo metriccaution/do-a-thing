@@ -40,9 +40,7 @@
     if (location.hash === '#debug') {
       console.log('Redirect', site);
     } else {
-      window.onload = () => {
-        window.location.href = site;
-      };
+      window.onload = () => setTimeout(() => window.location.href = site, 4000);
     }
   </script>
 </body>
