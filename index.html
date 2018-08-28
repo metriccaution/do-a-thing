@@ -40,7 +40,9 @@
     if (location.hash === '#debug') {
       console.log('Redirect', site);
     } else {
-      window.location.href = site;
+      window.onload = () => {
+        window.location.href = site;
+      };
     }
   </script>
 </body>
