@@ -22,20 +22,26 @@
       'https://en.wikipedia.org/wiki/Special:RandomInCategory/Featured_articles',
       'https://longform.org/random'
     ];
-    window.location.href = sites[Math.floor(Math.random() * sites.length)];
 
     // Spinner while the next page loads
     setInterval(() => {
       const el = document.getElementById('spinner');
       switch (el.textContent) {
         case '.':
-          return el.textContent = '..';
+        return el.textContent = '..';
         case '..':
-          return el.textContent = '...';
+        return el.textContent = '...';
         default:
-          return el.textContent = '.';
+        return el.textContent = '.';
       }
     }, 300);
+
+    const site = sites[Math.floor(Math.random() * sites.length)];
+    if (location.hash === '#debug') {
+      console.log('Redirect', site);
+    } else {
+      window.location.href = site;
+    }
   </script>
 </body>
 </head>
